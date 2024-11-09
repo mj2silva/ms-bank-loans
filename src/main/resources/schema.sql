@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS `loans` (
     `loan_id` INT AUTO_INCREMENT,
     `customer_id` INT NOT NULL,
-    `loan_number` VARCHAR(100) NOT NULL,
+    `loan_number` VARCHAR(100) UNIQUE NOT NULL,
     `loan_type` VARCHAR(100) NOT NULL,
     `total_loan` DECIMAL NOT NULL,
     `amount_paid` DECIMAL NOT NULL,
