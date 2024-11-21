@@ -12,6 +12,7 @@ import java.time.Instant;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "loans")
 public class Loan extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
